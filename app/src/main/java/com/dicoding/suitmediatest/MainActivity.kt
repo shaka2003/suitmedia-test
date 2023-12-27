@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
             if (cleanedSentence.isEmpty()) {
                 Toast.makeText(this, "please write a sentence", Toast.LENGTH_SHORT).show()
             } else {
-                if (cleanedSentence == cleanedSentence.reversed()) {
+                if (cleanedSentence.equals(cleanedSentence.reversed(), ignoreCase = true)) {
                     Toast.makeText(this, "Is Palindrome", Toast.LENGTH_SHORT).show()
                 } else {
                     Toast.makeText(this, "Not Palindrome", Toast.LENGTH_SHORT).show()
